@@ -1,6 +1,241 @@
-.headers {
-    color: green;
+/*-------------------- Global Styles --------------------*/
+header, nav, body, main, footer {
+    display: block;
+    width: 1280px;
+    margin: 0 auto;
 }
-#goalie {
-    color: blue;
+body {
+    background: rgb(23, 95, 189);
+}
+
+/*-------------------- Header/Navigation Section --------------------*/
+header {
+    text-align: center;
+    background-color: rgb(255,255,255);
+}
+nav {
+    text-align: center;
+    background-color: rgb(255,255,255);
+    padding: 5px 0;
+}
+li {
+    color: rgb(91,134,107);
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a {
+    font-size: 18px;
+    font-family: 'Effra', sans-serif;
+    color: rgb(91,134,107);
+    text-decoration: none;
+    padding: 15px;
+}
+nav ul li a:hover {
+    color: rgb(255,255,255);
+    background: rgb(185,140,72);
+    padding: 8px;
+}
+#logo {
+    filter: invert(26%) sepia(20%) saturate(384%) hue-rotate(337deg) brightness(91%) contrast(84%);
+}
+
+/*-------------------- Welcome Section --------------------*/
+#welcome {
+    background: url(http://www.public.asu.edu/~aruesche/GIT337/M7/images/twotrees.jpg);
+    background-color: rgba(45,62,163, 0.75);
+    background-blend-mode: exclusion;
+    height: 625px;
+    background-size: cover;
+}
+#welcome h1, h3{
+    text-align: center;
+    color: rgb(255,255,255);
+    margin: 0;
+}
+#welcome h1 {
+    font-family: 'Effra', sans-serif;
+    font-size: 64px;
+    position: relative;
+    top: 240px;
+}
+#welcome h3 {
+    font-family: kepler-std, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 48px;
+    position: relative;
+    top: 230px;
+}
+
+/*-------------------- About Us Section --------------------*/
+#about {
+    background: rgb(255,255,255);
+    height: 550px;
+}
+#about h2 {
+    font-family: 'Effra', sans-serif;
+    font-size: 48px;
+    color: rgb(82,71,65);
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 50px;
+}
+.leftcol {
+    color: rgb(82,71,65);
+    float: left;
+    width: 500px;
+    margin: 0px;
+    position: relative;
+    top: 60px;
+    left: 140px;
+}
+#about h3 {
+    font-family: 'Effra', sans-serif;
+    font-size: 38px;
+    color: rgb(134,118,92);
+    text-align: left;
+}
+.rightcol {
+    float: right;
+    width: 460px;
+    margin: 0;
+    position: relative;
+    top: 80px;
+    right: 140px;
+}
+#about p {
+    font-family: 'Effra', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+
+/*-------------------- Portfolio Section --------------------*/
+#portfolio {
+    background: rgb(91,134,107);
+    height: 550px;
+}
+#portfolio h2 {
+    font-family: 'Effra', sans-serif;
+    font-size: 48px;
+    color: rgb(255,255,255);
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 82px;
+    padding-bottom: 110px;
+}
+.leftbtn {
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(270deg);
+    top: -40px;
+    left: 50px;
+    cursor: pointer;
+}
+.rightbtn {
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(90deg);
+    top: -40px;
+    right: 50px;
+    cursor: pointer;
+}
+#portfolio img {
+    padding: 1px 10px;
+}
+
+/*-------------------- Contact Us Section --------------------*/
+#contact {
+    background: rgb(255,255,255);
+    height: 550px;
+}
+#contact h2 {
+    font-family: 'Effra', sans-serif;
+    font-size: 48px;
+    color: rgb(82,71,65);
+    margin: 0;
+    float: right;
+    position: relative;
+    top: 27px;
+    right: 200px;
+}
+#contact figure {
+    float: left;
+    position: relative;
+    left: 140px;
+    margin: 0;
+}
+#contact form {
+    float: right;
+    position: relative;
+    top: 100px;
+    left: 146px;
+    width: 405px;
+}
+#email, #subject {
+    font-family: 'Effra', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(34,34,34);
+    width: 405px;
+    height: 68px;
+    background-color: rgb(235,235,235);
+    margin-bottom: 22px;
+}
+#message {
+    font-family: 'Effra', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(34,34,34);
+    width: 405px;
+    height: 175px;
+    background-color: rgb(235,235,235);
+    margin-bottom: 32px;
+}
+.send {
+    background-color: rgb(91,134,107);
+    color: rgb(235,235,235);
+    font-family: 'Effra', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    width: 150px;
+    height: 60px;
+    position: relative;
+    bottom: 13px;
+    left: 260px;
+    cursor: pointer;
+}
+.sendarrow {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+    left: 213px;
+    bottom: 7px;
+}
+/*-------------------- Footer Section --------------------*/
+footer {
+    background: rgb(255,255,255);
+    height: 100px;
+}
+footer p {
+    font-family: 'Effra', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(82,71,65);
+    padding: 20px 15px 0 0;
+}
+.social {
+    position: relative;
+    top: 40px;
+    right: 435px;
+}
+.topbtn {
+    float: right;
+    position: relative;
+    bottom: -37px;
+    right: 140px;
 }
